@@ -1,0 +1,170 @@
+{
+	"variables": [],
+	"info": {
+		"name": "SpringBootREST",
+		"_postman_id": "721d2767-945f-bdff-0ac0-57b447f9fdf4",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "hello",
+			"request": {
+				"url": "http://localhost:8080/hello",
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "[{\n        \"name\": \"mark\",\n        \"salray\": 100\n},\n{\n        \"name\": \"mark\",\n        \"salray\": 100\n}]"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "hello1",
+			"request": {
+				"url": "http://localhost:8080/hello1",
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"itemType\":\"desert\",\n\t\"itemName\":\"chff\",\n\t\"price\":12.0\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "hello2",
+			"request": {
+				"url": "http://localhost:8080/hello2",
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"itemType\":\"desert\",\n\t\"itemName\":\"chff\",\n\t\"price\":12.0\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "hello3",
+			"request": {
+				"url": "http://localhost:8080/hello3",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\": \"mark\",\n    \"salray\": 100\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "hello4",
+			"request": {
+				"url": "http://localhost:8080/hello4",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "[{\n    \"name\": \"mark\",\n    \"salray\": 100\n},\n{\n    \"name\": \"mike\",\n    \"salray\": 120.00\n}]"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "hello5",
+			"request": {
+				"url": "http://localhost:8080/hello5/25",
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "[{\n    \"name\": \"mark\",\n    \"salray\": 100\n},\n{\n    \"name\": \"mike\",\n    \"salray\": 120.00\n}]"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "hello6",
+			"request": {
+				"url": {
+					"raw": "http://localhost:8080/hello6?name=mark",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"hello6"
+					],
+					"query": [
+						{
+							"key": "name",
+							"value": "mark",
+							"equals": true,
+							"description": ""
+						}
+					],
+					"variable": []
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "[{\n    \"name\": \"mark\",\n    \"salray\": 100\n},\n{\n    \"name\": \"mike\",\n    \"salray\": 120.00\n}]"
+				},
+				"description": ""
+			},
+			"response": []
+		}
+	]
+}
