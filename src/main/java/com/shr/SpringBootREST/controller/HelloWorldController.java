@@ -8,6 +8,7 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.RestController;
@@ -23,7 +24,7 @@ public class HelloWorldController {
 		return "Hello World Developer!!!";
 	}
 
-	@RequestMapping("/hello1")
+	@RequestMapping(value= "/hello1", method=RequestMethod.GET)
 	public Employee getEmployee() {
 		Employee emp1 = new Employee("mark", 100.00);
 		return emp1;
@@ -39,7 +40,7 @@ public class HelloWorldController {
 		return list;
 	}
 
-	@RequestMapping("/hello3")
+	@RequestMapping(value= "/hello3", method=RequestMethod.POST)
 	public Employee addEmployee(@RequestBody Employee e) {
 		return e;
 	}
@@ -50,8 +51,8 @@ public class HelloWorldController {
 	}
 
 	@RequestMapping("/hello5/{id}")
-	public String getById(@PathVariable("id") String id) {
-		return id;
+	public String getById(@PathVariable("id") String id1) {
+		return id1;
 	}
 	
 	@RequestMapping("/hello6")
